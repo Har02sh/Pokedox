@@ -1,0 +1,14 @@
+.PokeData{
+    flex-basis: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &:hover{
+        background-color: beige;
+    }
+}
+.PokeData > img{
+    width: 200px;
+  object-fit: cover;
+  
+}

@@ -1,0 +1,1 @@
+Simple Pokedex Page which contains a list of pokemons and their images.
