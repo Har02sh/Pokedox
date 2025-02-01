@@ -1,16 +1,13 @@
-import "./Search.css"
+import "./Search.css";
 
-function Search(){
-    return (
-        <div className="header">
-            <h1>PokeDex</h1>
-            <input
-            type="text"
-            placeholder="Enter Pokemon Name.."
-            id="search"
-            />
-        </div>
-    )
+function Search({ showInput = true }) {
+  return (
+    <div className="header">
+      {showInput && (
+        <input type="text" placeholder="Enter Pokemon Name.." id="search" />
+      )}
+    </div>
+  );
 }
 
 export default Search;

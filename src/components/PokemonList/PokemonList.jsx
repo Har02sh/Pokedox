@@ -39,10 +39,9 @@ function PokemonList(){
 
     return(
         <>
-            <h4>Pokemon List</h4>
             <div className="pokemon-wrapper-div">
             { isLoading ? <Loader/> : 
-              pokemonList.map(poke => <Pokemon name={poke.name} image={poke.image}  key={poke.id} />)
+              pokemonList.map(poke => <Pokemon name={poke.name} image={poke.image}  key={poke.id} id={poke.id} />)
             }
             </div>
             <div className="buttons">

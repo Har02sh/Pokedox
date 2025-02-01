@@ -12,3 +12,6 @@
   object-fit: cover;
   
 }
+.PokeData:hover h2 {
+    color: black;
+}
