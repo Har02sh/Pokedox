@@ -1,7 +1,7 @@
 .pokemon-detail-wrapper{
     width: 30%;
     height: 80%;
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(25px);
     /* border: 2px solid black; */
     box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;

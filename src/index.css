@@ -3,15 +3,10 @@
     padding: 0;
     box-sizing: border-box;
     scrollbar-width: none;
-
 }
 html,body{
     height: 100vh;
     width: 100vw;
-}
-body{
-    background:url(https://wallpapersok.com/images/thumbnail/digital-art-pokeball-o2gyvj4bweaap0ah.webp);
-
 }
 #root{
     /* height: 100%; */
@@ -22,6 +17,6 @@ body{
 a{
     text-decoration: none;
     &:visited{
-        color: white;
+        color: black;
     }
 }
