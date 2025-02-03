@@ -6,9 +6,9 @@ import {BrowserRouter} from "react-router-dom";
 
 createRoot(document.getElementById('root')).render(
 // This allows us to use the react-router-dom in whole app.
-  <StrictMode>  
+  // <StrictMode>  
     <BrowserRouter>
       <App />
     </BrowserRouter>
-  </StrictMode>,
+  // </StrictMode>,
 )
