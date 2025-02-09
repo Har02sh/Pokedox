@@ -1,11 +1,17 @@
+import useDebounce from "../../hooks/useDebounce";
 import "./Search.css";
 
-function Search({ showInput = true }) {
+function Search({updateInput}) {
+  const debounceSearch = useDebounce((e)=>updateInput(e.target.value))
   return (
     <div className="header">
-      {showInput && (
-        <input type="text" placeholder="Enter Pokemon Name.." id="search" />
-      )}
+        <input 
+        type="text" 
+        placeholder="Enter Pokemon Name.." 
+        id="search" 
+        onChange={debounceSearch}
+        />
+      
     </div>
   );
 }

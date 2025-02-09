@@ -4,14 +4,19 @@ import "./PokemonDetails.css";
 import usePokemonList from "../../hooks/usePokemonList";
 import Loader from "../Loader/Loader";
 
-function PokemonDetails() {
+function PokemonDetails({pokemonName}) {
+  let response;
   const { id } = useParams();
   const [pokeDetail, setPokeDetail] = useState({});
   const [isLoading, setIsLoading] = useState(true);
 
   async function getPokemon() {
     try {
-      const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${id}`);
+      if(pokemonName){
+        response = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonName}`);
+      }else{
+        response = await fetch(`https://pokeapi.co/api/v2/pokemon/${id}`);
+      }
       const data = await response.json();
       const responseTypes = await fetch(
         `https://pokeapi.co/api/v2/type/${data.types[0].type.name}/`
